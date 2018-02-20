@@ -1,8 +1,11 @@
 var arc = require('@architect/functions')
+var layout = require('@architect/shared/layout')
 
-function route(req, res) {
-  console.log(JSON.stringify(req, null, 2))
-  res({html:`hello world`})
+function index(req, res) {
+  var render = layout.bind({}, req)
+  res({
+    html: layout(`hello world from IndexConf`)
+  })
 }
 
-exports.handler = arc.html.get(route)
+exports.handler = arc.html.get(index)
