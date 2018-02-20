@@ -1,0 +1,18 @@
+{
+  "name": "arc-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "create": "AWS_PROFILE=default AWS_REGION=us-west-1 arc-create",
+    "deploy": "AWS_PROFILE=default AWS_REGION=us-west-1 arc-deploy",
+    "start": "NODE_ENV=testing AWS_PROFILE=default AWS_REGION=us-west-1 arc-sandbox",
+    "dns": "AWS_PROFILE=default AWS_REGION=us-west-1 arc-dns"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@architect/workflows": "^2.2.2"
+  }
+}
