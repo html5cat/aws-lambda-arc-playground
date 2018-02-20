@@ -1,5 +1,6 @@
 var arc = require('@architect/functions')
 var layout = require('@architect/shared/layout')
+var log = require('@architect/shared/middleware/log')
 
 function index(req, res) {
   var render = layout.bind({}, req)
@@ -8,4 +9,4 @@ function index(req, res) {
   })
 }
 
-exports.handler = arc.html.get(index)
+exports.handler = arc.html.get(log, index)
