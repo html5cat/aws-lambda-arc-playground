@@ -6,13 +6,14 @@
   "scripts": {
     "create": "AWS_PROFILE=default AWS_REGION=us-west-1 arc-create",
     "deploy": "AWS_PROFILE=default AWS_REGION=us-west-1 arc-deploy",
-    "start": "NODE_ENV=testing AWS_PROFILE=default AWS_REGION=us-west-1 arc-sandbox",
+    "start": "NODE_ENV=testing AWS_PROFILE=default AWS_REGION=us-west-1 nodemon --watch src -e js,css --exec arc-sandbox",
     "dns": "AWS_PROFILE=default AWS_REGION=us-west-1 arc-dns"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@architect/workflows": "^2.2.2"
+    "@architect/workflows": "^2.2.2",
+    "nodemon": "^1.15.1"
   }
 }
