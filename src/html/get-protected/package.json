@@ -1,0 +1,6 @@
+{
+  "name": "arc-workshop-get-protected",
+  "dependencies": {
+    "@architect/functions": "^1.6.3"
+  }
+}
