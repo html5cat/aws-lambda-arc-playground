@@ -1,7 +1,8 @@
 {
   "name": "arc-workshop-get-login",
   "dependencies": {
-    "@architect/functions": "^1.6.3",
+    "@architect/data": "^2.0.2",
+    "@architect/functions": "^1.8.3",
     "arc-middleware-github-oauth": "^1.0.0"
   }
 }
