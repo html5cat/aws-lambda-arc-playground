@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@architect/workflows": "^2.2.2",
+    "@architect/workflows": "^2.11.0",
     "nodemon": "^1.15.1"
   }
 }
